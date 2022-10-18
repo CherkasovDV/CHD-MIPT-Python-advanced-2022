@@ -43,7 +43,7 @@ class Complex:
         return f'{mod(self)}*exp({math.atan(self.b/self.a)}i)'
 
     def convtoalg(self):
-        return f'{self.a*cos(self.b)}{"-" if sin(self.b) < 0 else "+"}{self.a*sin(self.b)}i'
+        return f'{self.a*math.cos(self.b)}{"-" if sin(self.b) < 0 else "+"}{self.a*math.sin(self.b)}i'
  
 c1 = Complex(1, 2)
 c2 = Complex(7, -8)
